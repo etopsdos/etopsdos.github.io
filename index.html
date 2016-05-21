@@ -35,7 +35,7 @@ body
 
 div.menu
 {
-	display: flex;
+	display: inline-block;;
 }
 
 div.menu a
@@ -45,14 +45,14 @@ div.menu a
 
 footer
 {
-	align-items: flex-end;
 	background: black;
 	color: darkgray;
-	display: flex;
+	display: block;
 	font-size: 1em;
 	height: 1em;
 	margin: -1em 0 0 0;
-	position: absolute;
+	position: fixed;
+	text-align: left;
 	top: 100%;
 	width: 100%;
 }
@@ -67,13 +67,12 @@ img
 	background: black;
 	border: none;
 	color: darkgray;
-	display: flex;
 	font-family: monospace;
 	font-size: 1em;
 	height: 1.5em;
 	margin: -2.5em 0 0 0;
 	outline: none;
-	position: absolute;
+	position: fixed;
 	text-transform: uppercase;
 	top: 100%;
 	width: 100%;
