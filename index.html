@@ -85,4 +85,15 @@ img
 	<div class="menu"> 4<a href="#">Menu</a></div>
 	<div class="menu"> 5<a href="#">Menu</a></div>
 </footer>
+<script>
+	var a = window.document.getElementsByTagName ('a');
+	for (var i = a.length; i--;)
+	{
+		a[i].onmouseover = function ()
+		{
+			var audio = new Audio ('beep.ogg');
+					audio.play ();
+		};
+	};
+</script>
 </body></html>
