@@ -20,6 +20,18 @@ a:hover
 	color: blue;
 }
 
+a.title
+{
+	background: blue;
+	color: yellow;
+}
+
+a.title:hover
+{
+	background: darkcyan;
+	color: blue;
+}
+
 body
 {
 	background: blue;
@@ -29,7 +41,7 @@ body
 	height: 100%;
 	margin: 0;
 	position: absolute;
-	text-align: left;
+	text-align: center;
 	width: 100%;
 }
 
@@ -43,10 +55,24 @@ div.menu a
 	background: darkcyan;
 }
 
-div.window
+div.panel
 {
 	display: inline-block;
+	height: 85%;
+	text-align: center;
 	vertical-align: top;
+	width: 49%;
+}
+
+div.window
+{
+	border-color: cyan;
+	border-width: 5pt;
+	border-style: double;
+	height: 90%;
+	margin: -0.75em 0 0 0;
+	padding: 1em;
+	text-align: left;
 }
 
 footer
@@ -90,12 +116,23 @@ img
 
 </head><body>
 
-<div class="window">
-╔══<a href="https://etopsdos.github.io" style="color:yellow"> ETOPSDOS </a>═══╗<br>║ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEX///8A///r5MGBAAAAAXRSTlMAQObYZgAAAF9JREFUeNrd0TEOgDAMBEH8/0/TIN3FI9HQsZXxLhEiVzMP2Wwb1IAHPOABD+XPMOtMkPItmO8BnuJXgUVEF/pMg++gb9SL54/P4VPkiOXjCLIw8KMMfIenneyZhEnkBvIJAbmTDkzzAAAAAElFTkSuQmCC"> <a href="https://github.com/etopsdos">GITHUB</a>      ║<br>║ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAIwSURBVFhH7ZY/aBVBEIdfYWGRwlIQLCxTWQgBi4CVYGUbSGmfSsROsBBeJwlEREglxMrGSjCpLFIoiIgaAoqgwitiINGYfzP55naO3bdZE1/uAgrvBx/czc7OzO3tzV5nqKH+TalegS4swCqsZ7yBhzDhM1qUSBfeeaJd0AICv/D7Ao/hks9uIJGRKpDIFpSSHsT8RAS6HqWBRG7BtgctJ8xprQCRR/DTA6bBjd/cf4cV+Azr2Cypje3BAox7pGNIdZwA36qA/U9nwc3+gPsx9z0LN7G9hx68rex/I9VnsAyLbnGpzsIWpE9umy9zbCjVPc8hbnGpvkoG6wI+cH3OPdrRIQXYOw7JQwEbcN9HmyksuyWODxiobUtpZTWv4bKHiAqNqXcEtlHn4ILPsXeexs7plQqYrybnOjpYjRVy1ecsgjUtI/WpbWzikywgVcxzYA/kBXyE6z4adYIFrPlAIHTDJz4aVdoDefMK/KmAJR/Lekd4T3EVQkBznHSPsmyjiTwtFGCJBjicVO8QYDMLYq12BS6Cdb/T7nsKzmAbhXtcW6HpvN3KbyBZwxFZhjRQvRJ2Mj7n/pr7nocZbGtQ2tmfKr+BJTIFdrbH5ayvQ6IdsHa9DXZGRL/o+4PrKY94DIlMgm2s/uCHUfuK2M/JnEdqKJFVyJe3TEi+A7d9dgsKG2yaBNYPNvsSRuy0/IqffQVjMOKzW5LqKEzAXXgBLzPsH+EGhP+EoYb6f9Xp7AMiHht6XBmRbgAAAABJRU5ErkJggg=="> <a href="https://plus.google.com/107382365483908361121">GOOGLE</a>      ║<br>╚═══════════════╝
+<div class="panel">
+<a class="title" href="https://etopsdos.github.io"> ETOPSDOS </a>
+	<div class="window">
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEX///8A///r5MGBAAAAAXRSTlMAQObYZgAAAF9JREFUeNrd0TEOgDAMBEH8/0/TIN3FI9HQsZXxLhEiVzMP2Wwb1IAHPOABD+XPMOtMkPItmO8BnuJXgUVEF/pMg++gb9SL54/P4VPkiOXjCLIw8KMMfIenneyZhEnkBvIJAbmTDkzzAAAAAElFTkSuQmCC">
+		<a href="https://github.com/etopsdos">GITHUB</a><br>
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAIwSURBVFhH7ZY/aBVBEIdfYWGRwlIQLCxTWQgBi4CVYGUbSGmfSsROsBBeJwlEREglxMrGSjCpLFIoiIgaAoqgwitiINGYfzP55naO3bdZE1/uAgrvBx/czc7OzO3tzV5nqKH+TalegS4swCqsZ7yBhzDhM1qUSBfeeaJd0AICv/D7Ao/hks9uIJGRKpDIFpSSHsT8RAS6HqWBRG7BtgctJ8xprQCRR/DTA6bBjd/cf4cV+Azr2Cypje3BAox7pGNIdZwA36qA/U9nwc3+gPsx9z0LN7G9hx68rex/I9VnsAyLbnGpzsIWpE9umy9zbCjVPc8hbnGpvkoG6wI+cH3OPdrRIQXYOw7JQwEbcN9HmyksuyWODxiobUtpZTWv4bKHiAqNqXcEtlHn4ILPsXeexs7plQqYrybnOjpYjRVy1ecsgjUtI/WpbWzikywgVcxzYA/kBXyE6z4adYIFrPlAIHTDJz4aVdoDefMK/KmAJR/Lekd4T3EVQkBznHSPsmyjiTwtFGCJBjicVO8QYDMLYq12BS6Cdb/T7nsKzmAbhXtcW6HpvN3KbyBZwxFZhjRQvRJ2Mj7n/pr7nocZbGtQ2tmfKr+BJTIFdrbH5ayvQ6IdsHa9DXZGRL/o+4PrKY94DIlMgm2s/uCHUfuK2M/JnEdqKJFVyJe3TEi+A7d9dgsKG2yaBNYPNvsSRuy0/IqffQVjMOKzW5LqKEzAXXgBLzPsH+EGhP+EoYb6f9Xp7AMiHht6XBmRbgAAAABJRU5ErkJggg==">
+		<a href="https://plus.google.com/107382365483908361121">GOOGLE</a>
+	</div>
 </div>
 
-<div class="window">
-╔═════ C:\ ═════╗<br>║ <a href="beep.ogg">beep     ogg</a>  ║<br>║ <a href="index.html">index    html</a> ║<br>║ <a href="README.md">readme   md</a>   ║<br>╚═══════════════╝
+<div class="panel">
+<a class="title" href="https://etopsdos.github.io"> C:\ </a>
+	<div class="window">
+		<a href="beep.ogg">beep     ogg</a><br>
+		<a href="index.html">index    html</a><br>
+		<a href="README.md">readme   md</a>
+	</div>
 </div>
 
 <input id="cmd" type="text" value="C:\"></input>
